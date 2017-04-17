@@ -1,0 +1,20 @@
+@mixin tema ($bg, $color, $border){
+	background-color: $bg;
+	color: $color;
+	border: $border;
+	width: 500px;
+	margin: 0 auto;
+}
+
+.tema-light{
+	@include tema(#fff, #000, 1px solid #000);
+}
+
+.tema-medium{
+	@include tema(#c4c4c4, #fff, 2px solid #000);
+}
+
+.tema-dark{
+	@include tema(#000, #fff, 3px solid red);
+}
+

@@ -4,26 +4,45 @@
   text-decoration: none;
   list-style-type: none; }
 
-nav ul {
-  display: flex; }
+.tema-light, .tema-medium, .tema-dark {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .tema-light h1, .tema-medium h1, .tema-dark h1 {
+    font-size: 30px;
+    text-transform: capitalize; }
+  .tema-light ul, .tema-medium ul, .tema-dark ul {
+    display: flex; }
+  .tema-light ul li a, .tema-medium ul li a, .tema-dark ul li a {
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.tema-light ul li a:hover {
+  background-color: #000;
+  color: #fff; }
+
+.tema-medium ul li a:hover {
+  background-color: #fff;
+  color: #000; }
+
+.tema-dark ul li a:hover {
+  background-color: #fff;
+  color: #000; }
 
 .tema-light {
   background-color: #fff;
   color: #000;
-  border: 1px solid #000;
-  width: 500px;
-  margin: 0 auto; }
+  border: 1px solid #000; }
 
 .tema-medium {
   background-color: #c4c4c4;
   color: #fff;
-  border: 2px solid #000;
-  width: 500px;
-  margin: 0 auto; }
+  border: 2px solid #000; }
 
 .tema-dark {
   background-color: #000;
   color: #fff;
-  border: 3px solid red;
-  width: 500px;
-  margin: 0 auto; }
+  border: 3px solid red; }

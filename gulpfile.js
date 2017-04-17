@@ -2,6 +2,18 @@ const gulp 		= require("gulp");
 const sass 		= require("gulp-sass");
 const notify 	= require("gulp-notify");
 
+var browserSync = require('browser-sync').create();
+
+
+// Static server
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+});
+
 /*
 
   Task responsável por recuperar todos arquivos no formato .scss e .sass
